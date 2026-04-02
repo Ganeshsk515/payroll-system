@@ -30,3 +30,6 @@ build/
 *.log
 .env
 .env.*
+
+# MCP local overrides
+mcp/servers.local.json

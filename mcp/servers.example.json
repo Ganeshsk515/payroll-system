@@ -1,0 +1,32 @@
+{
+  "servers": {
+    "project-filesystem": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\gouri\\workspace\\payslip-app"
+      ]
+    },
+    "project-git": {
+      "transport": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "C:\\Users\\gouri\\workspace\\payslip-app"
+      ]
+    },
+    "project-sqlite": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "--db-path",
+        "C:\\Users\\gouri\\workspace\\payslip-app\\backend\\db.sqlite3"
+      ]
+    }
+  }
+}

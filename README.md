@@ -22,10 +22,33 @@ A professional payroll and employee management platform built with Django REST F
 - PDF generation: ReportLab
 - Database: SQLite for local development
 
+## MCP Support
+
+This repository includes an `mcp/` directory to make the project MCP-ready for local development and agent-assisted workflows.
+
+Included now:
+
+- example MCP server definitions for filesystem access
+- example MCP server definitions for git-aware project access
+- example MCP server definitions for SQLite database inspection
+- documentation for setting up local-only MCP configuration safely
+
+Current status:
+
+- the project includes MCP configuration scaffolding in the repository
+- this is intended for development tooling and engineering workflows
+- it is not yet exposed as a user-facing feature inside the payroll UI
+
+See:
+
+- `mcp/README.md`
+- `mcp/servers.example.json`
+
 ## Project Structure
 
 ```text
 payslip-app/
+├─ mcp/
 ├─ backend/
 │  ├─ apps/
 │  │  ├─ employees/
